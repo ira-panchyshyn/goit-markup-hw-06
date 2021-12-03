@@ -701,7 +701,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .modal-field {
@@ -711,9 +711,6 @@ img {
 .modal-form-input {
   width: 448px;
   height: 40px;
-  left: 576px;
-  top: 314px;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -721,7 +718,8 @@ img {
   padding-right: 15px; */
 }
 
-.modal-form-input:focus-within {
+.modal-form-input:focus,
+.modal-form-feedback:focus {
   outline: 1px solid var(--active-btn-color);
 }
 
@@ -732,4 +730,63 @@ img {
   letter-spacing: 0.01em;
   color: var(--paragraph-text-color);
   margin-bottom: 4px;
+}
+
+.modal-form-feedback {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  outline: none;
+}
+
+.modal-form-feedback::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-feedback {
+  margin-bottom: 20px;
+}
+
+.modal-agreement-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-text-color);
+}
+
+.modal-agreement-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.modal-button {
+  width: 200px;
+  height: 50px;
+  background: var(--active-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--alternative-text-color);
+}
+
+.modal-button-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-agreement {
+  margin-bottom: 30px;
 }

@@ -571,14 +571,27 @@
               class="modal-form-input"
             />
           </div>
-          <textarea
-            name="feedback"
-            class=""
-            rows="5"
-            placeholder="Введите текст"
-          ></textarea>
-
-          <button type="submit">Отправить</button>
+          <div class="modal-feedback">
+            <label for="user-feedback" class="form-input-text"
+              >Комментарий</label
+            >
+            <textarea
+              name="feedback"
+              id="user-feedback"
+              class="modal-form-feedback"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="modal-agreement">
+            <input type="checkbox" name="agree" value="agree" />
+            <span class="modal-agreement-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="modal-agreement-link">Условия договора</a></span
+            >
+          </div>
+          <div class="modal-button-submit">
+            <button class="modal-button" type="submit">Отправить</button>
+          </div>
         </form>
       </div>
     </div>
