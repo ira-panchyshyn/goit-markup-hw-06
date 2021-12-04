@@ -477,62 +477,81 @@
             </ul>
           </address>
         </div>
-        <div class="social">
-          <h3 class="social-title">Присоединяйтесь</h3>
-          <ul class="list social-list">
-            <li class="social-item">
-              <a
-                href="https://www.instagram.com"
-                class="social-link social-link-footer"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-              >
-                <svg class="social-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+        <div class="social-details">
+          <div class="social">
+            <h3 class="social-title">Присоединяйтесь</h3>
+            <ul class="list social-list">
+              <li class="social-item">
+                <a
+                  href="https://www.instagram.com"
+                  class="social-link social-link-footer"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://twitter.com"
+                  class="social-link social-link-footer"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.facebook.com"
+                  class="social-link social-link-footer"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://www.linkedin.com"
+                  class="social-link social-link-footer"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                >
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe">
+            <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+            <form action="#" class="form-subscribe">
+              <input
+                type="mail"
+                class="form-subscribe-input"
+                name="mail-subscribe"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="form-subscribe-button">
+                Подписаться
+                <svg class="subscribe-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                href="https://twitter.com"
-                class="social-link social-link-footer"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-              >
-                <svg class="social-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                href="https://www.facebook.com"
-                class="social-link social-link-footer"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-              >
-                <svg class="social-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com"
-                class="social-link social-link-footer"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-              >
-                <svg class="social-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="modal-close-icon">
@@ -543,33 +562,48 @@
         <form action="#" class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="form-input-text">Имя </label>
-            <input
-              type="text"
-              id="user-name"
-              name="user-name"
-              class="modal-form-input"
-              required
-              minlenght="2"
-            />
+            <div class="input-wrap">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="modal-form-input"
+                required
+                minlenght="2"
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="user-phone" class="form-input-text">Телефон</label>
-            <input
-              type="tel"
-              id="user-phone"
-              name="user-phone"
-              class="modal-form-input"
-              required
-            />
+            <div class="input-wrap">
+              <input
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                class="modal-form-input"
+                required
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="user-email" class="form-input-text">Почта</label>
-            <input
-              type="email"
-              id="user-email"
-              name="user-email"
-              class="modal-form-input"
-            />
+            <div class="input-wrap">
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="modal-form-input"
+              />
+              <svg class="modal-form-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-feedback">
             <label for="user-feedback" class="form-input-text"
@@ -595,6 +629,6 @@
         </form>
       </div>
     </div>
-    <!-- <script src="js/modal.js"></script> -->
+    <script src="js/modal.js"></script>
   </body>
 </html>
