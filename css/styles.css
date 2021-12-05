@@ -59,6 +59,14 @@ img {
   letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /*--------------- LOGO ----------------- */
 
 .logo {
@@ -793,6 +801,7 @@ img {
 }
 
 .modal-form-icon {
+  pointer-events: none;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -876,4 +885,33 @@ img {
 
 .modal-agreement {
   margin-bottom: 30px;
+}
+
+.check-item {
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 2px;
+  border: 2px solid var(--main-text-color);
+  margin-right: 8px;
+  transition-property: border-color background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.checkbox:focus + .check-item {
+  border-color: var(--active-btn-color);
+}
+
+.checkbox:checked + .check-item {
+  background-color: var(--active-btn-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--active-btn-color);
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
 }

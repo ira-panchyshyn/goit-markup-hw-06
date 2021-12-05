@@ -617,11 +617,21 @@
             ></textarea>
           </div>
           <div class="modal-agreement">
-            <input type="checkbox" name="agree" value="agree" />
-            <span class="modal-agreement-text"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="modal-agreement-link">Условия договора</a></span
-            >
+            <label class="check-text">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="agreement"
+                value="agreement"
+              />
+              <span class="check-item"></span>
+              <span class="modal-agreement-text"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="modal-agreement-link"
+                  >Условия договора</a
+                ></span
+              >
+            </label>
           </div>
           <div class="modal-button-submit">
             <button class="modal-button" type="submit">Отправить</button>
