@@ -749,9 +749,17 @@ img {
   align-items: center;
 }
 
+.modal-close:hover,
+.modal-close:focus {
+  outline: none;
+  border-color: var(--active-btn-color);
+  color: var(--active-btn-color);
+}
+
 .modal-close-icon {
   width: 17px;
   height: 17px;
+  fill: currentColor;
 }
 
 .is-hidden {
